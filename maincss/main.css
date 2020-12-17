@@ -44,7 +44,7 @@ body .page {
   margin: 0px auto;
   overflow: hidden; }
 
-body, body .page .about, body .page .winery {
+body, body .page .about, body .page .gallery {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -79,7 +79,7 @@ body .page .homepage .main-title {
   background-color: #111;
   display: inline-block; }
 
-body .page .about .blur .products-title, body .page .winery h3, body .page .gallery .gal-title, body .page .foot .foot-main-title, body .page .foot .foot-info address .foot-title {
+body .page .about .blur .products-title, body .page .products .pro-title, body .page .gallery h3, body .page .foot .foot-main-title, body .page .foot .foot-info address .foot-title {
   text-align: center;
   color: whitesmoke;
   font-size: 50px;
@@ -96,7 +96,7 @@ body .page .about .blur .description .text, body .page .foot .last-point {
   font-weight: lighter;
   color: whitesmoke; }
 
-body .page .gallery .gal .gal-item .text {
+body .page .products .pro .pro-item .text {
   color: blueviolet;
   padding: 10px 0;
   max-width: 250px;
@@ -127,7 +127,7 @@ body .page {
   margin: 0px auto;
   overflow: hidden; }
 
-body, body .page .about, body .page .winery {
+body, body .page .about, body .page .gallery {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -162,7 +162,7 @@ body .page .homepage .main-title {
   background-color: #111;
   display: inline-block; }
 
-body .page .about .blur .products-title, body .page .winery h3, body .page .gallery .gal-title, body .page .foot .foot-main-title, body .page .foot .foot-info address .foot-title {
+body .page .about .blur .products-title, body .page .products .pro-title, body .page .gallery h3, body .page .foot .foot-main-title, body .page .foot .foot-info address .foot-title {
   text-align: center;
   color: whitesmoke;
   font-size: 50px;
@@ -179,7 +179,7 @@ body .page .about .blur .description .text, body .page .foot .last-point {
   font-weight: lighter;
   color: whitesmoke; }
 
-body .page .gallery .gal .gal-item .text {
+body .page .products .pro .pro-item .text {
   color: blueviolet;
   padding: 10px 0;
   max-width: 250px;
@@ -243,27 +243,11 @@ body {
           background-color: white;
           width: 10%;
           margin: 20px auto; }
-    body .page .winery {
-      background-image: url(../pics/IMG_9818.jpg); }
-      body .page .winery h3::after, body .page .winery h3::before {
-        content: '';
-        display: block;
-        height: 2px;
-        background-color: white;
-        width: 10%;
-        margin: 20px auto; }
-      body .page .winery .carousel .carousel-item {
-        width: 600px;
-        height: 500px; }
-        body .page .winery .carousel .carousel-item img {
-          width: 100%;
-          height: 100%;
-          object-fit: contain; }
-    body .page .gallery {
+    body .page .products {
       background-color: whitesmoke; }
-      body .page .gallery .gal-title {
+      body .page .products .pro-title {
         color: blueviolet; }
-        body .page .gallery .gal-title::after, body .page .gallery .gal-title::before {
+        body .page .products .pro-title::after, body .page .products .pro-title::before {
           content: '';
           display: block;
           height: 2px;
@@ -271,26 +255,26 @@ body {
           width: 10%;
           margin: 20px auto;
           background-color: blueviolet; }
-      body .page .gallery .gal {
+      body .page .products .pro {
         padding-bottom: 50px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         vertical-align: middle; }
-        body .page .gallery .gal .gal-item {
-          border: 1px red solid;
+        body .page .products .pro .pro-item {
+          background-color: white;
           margin-bottom: 10px;
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
           vertical-align: middle; }
-          body .page .gallery .gal .gal-item img {
+          body .page .products .pro .pro-item img {
             height: 400px;
             width: 400px;
             object-fit: contain; }
-          body .page .gallery .gal .gal-item .text h4 {
+          body .page .products .pro .pro-item .text h4 {
             font-size: 30px; }
-            body .page .gallery .gal .gal-item .text h4::after {
+            body .page .products .pro .pro-item .text h4::after {
               content: '';
               display: block;
               height: 2px;
@@ -298,6 +282,24 @@ body {
               width: 80%;
               margin: 20px auto;
               background-color: blueviolet; }
+    body .page .gallery {
+      background-image: url(../pics/IMG_9818.jpg); }
+      body .page .gallery h3::after, body .page .gallery h3::before {
+        content: '';
+        display: block;
+        height: 2px;
+        background-color: white;
+        width: 10%;
+        margin: 20px auto; }
+      body .page .gallery .carousel {
+        border: 1px red solid; }
+        body .page .gallery .carousel .carousel-item {
+          width: 600px;
+          height: 500px; }
+          body .page .gallery .carousel .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; }
     body .page .foot {
       padding-bottom: 50px;
       background-color: rgba(0, 0, 0, 0.5); }

@@ -65,32 +65,9 @@ body{
                 }    
             }
         }
-        .winery{
-            background-image: url(../pics/IMG_9818.jpg);
-            @extend %background;
-            h3{
-                @extend %title;
-                &::after, 
-                &::before{
-                    @include after(10%);
-                }
-            }
-            .carousel{
-                // position: relative;
-                .carousel-item{
-                    width: 600px;
-                    height: 500px;
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        object-fit: contain;
-                    }
-                }
-            }
-        }
-        .gallery{
+        .products{
             background-color: whitesmoke;
-            .gal-title{
+            .pro-title{
                 @extend %title;
                 color: blueviolet;
                 &::after, 
@@ -99,17 +76,16 @@ body{
                     background-color: blueviolet;
                 }
             }
-            .gal{
+            .pro{
                 padding-bottom: 50px;
                 @include flex (space-around, wrap);
-                .gal-item{
-                    border: 1px red solid;
+                .pro-item{
+                    background-color: white;
                     margin-bottom: 10px;
                     @include flex (center, wrap);
                     img{
                         height: 400px;
                         width: 400px;
-                        // height: 100%;
                         object-fit: contain;
                     }
                     .text{
@@ -124,6 +100,29 @@ body{
                     }
                 }
             }    
+        }
+        .gallery{
+            background-image: url(../pics/IMG_9818.jpg);
+            @extend %background;
+            h3{
+                @extend %title;
+                &::after, 
+                &::before{
+                    @include after(10%);
+                }
+            }
+            .carousel{
+                border: 1px red solid;
+                .carousel-item{
+                    width: 600px;
+                    height: 500px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
         }
         // .slider-container{
         //     height: 100vh;
