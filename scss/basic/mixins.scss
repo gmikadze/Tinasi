@@ -1,0 +1,43 @@
+@mixin flex ($justify, $wrap){
+    display: flex;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    vertical-align: middle;
+}
+@mixin position($property, $top, $index) {
+    position: $property;
+    top: $top;
+    width: 100%;
+    z-index: $index;
+}
+@mixin for-image ($fit) {
+    height: 100%;
+    width: 100%;
+    object-fit: $fit;
+}
+@mixin after($width){
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: white;
+    width: $width;
+    margin: 20px auto;
+}
+@mixin gallery-pic($width, $height){
+    width: $width;
+    max-height: $height;
+}
+@mixin position ($property) {
+    position: $property;
+}
+@keyframes anime {
+    from{
+        transform: rotateY(0deg);
+    }
+    50%{
+        height: 150px;
+    }
+    to{
+        transform: rotateZ(-30deg);
+    }
+}

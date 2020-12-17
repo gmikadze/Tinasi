@@ -1,0 +1,240 @@
+@import '../basic/variables.scss';
+@import '../basic/classes.scss';
+@import '../basic/mixins.scss';
+@import '../scss/fonts/stylesheet.css';
+body{
+    background-image: url(../pics/back5.jpg);
+    @extend %background;
+    .page{
+        font-family: 'Langar';
+        @extend %page;
+        header{
+            .navbar{
+                @extend %navbar;
+                @include flex(space-around, wrap);
+                .logo{
+                    height: $hlogo;
+                    img{
+                        height: 100%;
+                    }
+                }
+                .menu{
+                    .nav{
+                        @include flex(space-between, wrap);
+                        .list-item{
+                            @extend %list-item;
+                            &:hover{
+                                @extend %nav-hover;
+                            }
+                        }
+                    }
+                }
+            }    
+        }
+        .homepage{
+            height: $max-page;
+            .main-title{
+                @extend %maintitle;
+            }         
+            .animated{
+                margin: 30vh 50%;
+                height: 100px;
+                img{
+                    animation: anime 2.5s linear infinite alternate;
+                    height: 100%;
+                }
+            }
+        }
+        .about{
+            background-image: url(../pics/back4.png);
+            @extend %background;
+            .blur{
+                background-color: rgba($color: #000000, $alpha: 0.5);
+                padding-bottom: 20px;
+                .products-title{
+                    @extend %title;
+                    &::after, 
+                    &::before{
+                        @include after(10%);
+                    }
+                }
+                .description{
+                    .text{
+                        @extend %text;
+                    }
+                }    
+            }
+        }
+        .winery{
+            background-image: url(../pics/IMG_9818.jpg);
+            @extend %background;
+            h3{
+                @extend %title;
+                &::after, 
+                &::before{
+                    @include after(10%);
+                }
+            }
+            .carousel{
+                // position: relative;
+                .carousel-item{
+                    width: 600px;
+                    height: 500px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+        .gallery{
+            background-color: whitesmoke;
+            .gal-title{
+                @extend %title;
+                color: blueviolet;
+                &::after, 
+                &::before{
+                    @include after(10%);
+                    background-color: blueviolet;
+                }
+            }
+            .gal{
+                padding-bottom: 50px;
+                @include flex (space-around, wrap);
+                .gal-item{
+                    border: 1px red solid;
+                    margin-bottom: 10px;
+                    @include flex (center, wrap);
+                    img{
+                        height: 400px;
+                        width: 400px;
+                        // height: 100%;
+                        object-fit: contain;
+                    }
+                    .text{
+                        @extend %galtext;
+                        h4{
+                            font-size: 30px;
+                            &::after{
+                                @include after(80%);
+                                background-color: blueviolet;
+                            }
+                        }
+                    }
+                }
+            }    
+        }
+        // .slider-container{
+        //     height: 100vh;
+        //     .slider{
+        //         @include position (relative);
+        //         max-width: 800px;
+        //         min-width: 320px;
+        //         .mySlides{
+        //             display: none;
+        //             img{
+        //                 @include for-image (contain);
+        //                 // margin-bottom: -6px;
+        //             }
+        //         }
+        //         .prev,
+        //         .next{
+        //             @include position (absolute);
+        //             @extend %prev-next;
+        //             &:hover{
+        //                 background-color: rgba(0, 0, 0, 0.8);
+        //             }
+        //         }
+        //         .next{
+        //             right: 0;
+        //             border-radius: 3px 0 0 3px;
+        //         }
+        //         .row{
+        //             @include flex (space-between, nowrap);
+        //             .column{
+        //                 width: 25%;
+        //                 img{
+        //                     width:100%
+        //                 }
+        //             }
+        //             .demo {
+        //                 opacity: 0.8;
+        //             }
+        //         }
+        //         .active,
+        //         .demo:hover{
+        //             opacity: 1;
+        //         }
+    
+        //     }
+        // }
+        .foot{
+            padding-bottom: 50px;
+            background-color: rgba($color: #000000, $alpha: 0.5);
+            .foot-main-title{
+                @extend %title;
+                &:after{
+                    @include after(10%);
+                }
+            }
+            .foot-info{
+                @include flex(space-around, wrap);
+                address{
+                    text-align: center;
+                    margin-bottom: 10px;
+                    .foot-title{
+                        @extend %title;
+                    }
+                    ul{
+                        color: white;
+                        font-size: 20px;
+                        line-height: 50px;
+                    }
+                }
+                iframe{
+                    @extend %footer-box;
+                }
+                .coment{
+                    .forms{
+                        @extend %footer-box;
+                        .input-item{
+                            input{
+                                @extend %input;
+                            }
+                        }
+                        textarea{
+                            @extend %input;
+                            resize: none;    
+                        }
+                        button{
+                            @extend %input;
+                            color: whitesmoke;
+                            background-color: orange;
+                        }
+                    }
+                }
+            }
+            .social{
+                width: 100%;
+                @include flex(center, nowrap);
+                color: whitesmoke;
+                i{
+                    font-size: 25px;
+                    margin-right: 20px;
+                    &:hover{
+                        color: orange;
+                        transition: 0.2s linear;
+                    }
+                }
+            }
+            .last-point{
+                @extend %text;
+                font-size: 25px;
+                .signature{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

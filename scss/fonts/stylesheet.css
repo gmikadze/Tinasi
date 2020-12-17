@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Langar';
+    src: url('Langar-Regular.eot');
+    src: url('Langar-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Langar-Regular.woff2') format('woff2'),
+        url('Langar-Regular.woff') format('woff'),
+        url('Langar-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

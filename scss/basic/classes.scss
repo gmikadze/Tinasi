@@ -1,0 +1,132 @@
+%page{
+    max-width: 1920px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+%background{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // border: 3px whitesmoke solid;
+}
+%list-item{
+    color:white;
+    margin: 40px 10px 0 0;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 8px;
+    border-radius: 10px;
+    // border: whitesmoke 1px solid;
+}
+%navbar{
+    max-width: 1920px;
+    padding: 10px;
+    width: 100%;
+}
+%content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+%nav-hover{
+    color: whitesmoke;
+    background-color: rgb(4, 2, 90);
+    transition: linear 0.4s;
+}
+%maintitle{
+    text-align: center;
+    margin: 30vh 0 0 50%;
+    transform: translate(-50%);
+    color: whitesmoke;
+    font-size: 50px;
+    letter-spacing: 20px;
+    font-weight: bolder;
+    background-color: #111;
+    display: inline-block;
+}
+%prev-next{
+    cursor: pointer;
+    top: 40%;
+    width: auto;
+    padding: 10px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+%title{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 50px;
+    letter-spacing: 10px;
+    padding: 20px 0;
+}
+// %title-after{
+//     content: '';
+//     display: block;
+//     height: 2px;
+//     background-color: white;
+//     width: 100%;
+//     margin: 20px auto;
+// }
+%text{
+    margin: 20px auto;
+    letter-spacing: 2px;
+    line-height: 40px;
+    max-width: 1000px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: lighter;
+    color: whitesmoke;
+}
+%card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: lighter;
+    font-size: 36px;
+    text-align: center;
+}
+%focused-card{
+    visibility: hidden;
+    max-height: 500px;
+    position: absolute;
+    transform: translate(0%, -100%);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgba($color: #000000, $alpha: 0);
+}
+%galtext{
+    color: blueviolet;
+    padding: 10px 0;
+    max-width: 250px;
+    text-align: center;
+    line-height: 25px;
+}
+%footer-grid{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 30px;
+    padding: 0 50px;
+}
+%footer-box{
+    width: 415px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+%input{
+    width: 100%;
+    font-size: 20px;
+    margin: 10px auto;
+    outline: orange solid 3px;
+}
