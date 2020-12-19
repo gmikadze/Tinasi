@@ -8,11 +8,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer-core": "^6.0.1",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-sass": "^4.1.0",
     "node-sass": "^5.0.0"
   },
   "dependencies": {
+    "gulp-uglifycss": "^1.1.0",
     "uninstall": "0.0.0"
   },
   "description": ""

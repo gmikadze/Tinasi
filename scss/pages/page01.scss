@@ -38,7 +38,7 @@ body{
             }         
             .animated{
                 margin: 30vh 50%;
-                height: 100px;
+                height: $hlogo;
                 img{
                     animation: anime 2.5s linear infinite alternate;
                     height: 100%;
@@ -50,7 +50,7 @@ body{
             @extend %background;
             .blur{
                 background-color: rgba($color: #000000, $alpha: 0.5);
-                padding-bottom: 20px;
+                padding-bottom: $size02;
                 .products-title{
                     @extend %title;
                     &::after, 
@@ -77,21 +77,20 @@ body{
                 }
             }
             .pro{
-                padding-bottom: 50px;
+                padding-bottom: $size05;
                 @include flex (space-around, wrap);
                 .pro-item{
                     background-color: white;
                     margin-bottom: 10px;
                     @include flex (center, wrap);
                     img{
-                        height: 400px;
-                        width: 400px;
+                        max-width: 400px;
                         object-fit: contain;
                     }
                     .text{
                         @extend %galtext;
                         h4{
-                            font-size: 30px;
+                            font-size: $size02;
                             &::after{
                                 @include after(80%);
                                 background-color: blueviolet;
@@ -112,64 +111,17 @@ body{
                 }
             }
             .carousel{
-                border: 1px red solid;
                 .carousel-item{
                     width: 600px;
                     height: 500px;
                     img{
-                        width: 100%;
-                        height: 100%;
-                        object-fit: contain;
+                        @extend %image;
                     }
                 }
             }
         }
-        // .slider-container{
-        //     height: 100vh;
-        //     .slider{
-        //         @include position (relative);
-        //         max-width: 800px;
-        //         min-width: 320px;
-        //         .mySlides{
-        //             display: none;
-        //             img{
-        //                 @include for-image (contain);
-        //                 // margin-bottom: -6px;
-        //             }
-        //         }
-        //         .prev,
-        //         .next{
-        //             @include position (absolute);
-        //             @extend %prev-next;
-        //             &:hover{
-        //                 background-color: rgba(0, 0, 0, 0.8);
-        //             }
-        //         }
-        //         .next{
-        //             right: 0;
-        //             border-radius: 3px 0 0 3px;
-        //         }
-        //         .row{
-        //             @include flex (space-between, nowrap);
-        //             .column{
-        //                 width: 25%;
-        //                 img{
-        //                     width:100%
-        //                 }
-        //             }
-        //             .demo {
-        //                 opacity: 0.8;
-        //             }
-        //         }
-        //         .active,
-        //         .demo:hover{
-        //             opacity: 1;
-        //         }
-    
-        //     }
-        // }
         .foot{
-            padding-bottom: 50px;
+            padding-bottom: $size05;
             background-color: rgba($color: #000000, $alpha: 0.5);
             .foot-main-title{
                 @extend %title;
@@ -186,9 +138,9 @@ body{
                         @extend %title;
                     }
                     ul{
-                        color: white;
-                        font-size: 20px;
-                        line-height: 50px;
+                        color: whitesmoke;
+                        font-size: $size02;
+                        line-height: $size05;
                     }
                 }
                 iframe{
@@ -204,23 +156,25 @@ body{
                         }
                         textarea{
                             @extend %input;
-                            resize: none;    
+                            height: 90px;
+                            resize: none;
                         }
-                        button{
-                            @extend %input;
-                            color: whitesmoke;
-                            background-color: orange;
-                        }
+                    }
+                    button{
+                        @extend %input;
+                        color: whitesmoke;
+                        background-color: orange;
                     }
                 }
             }
             .social{
+                margin-top: $size05;
                 width: 100%;
-                @include flex(center, nowrap);
                 color: whitesmoke;
+                @include flex(center, nowrap);
                 i{
                     font-size: 25px;
-                    margin-right: 20px;
+                    margin-right: $size02;
                     &:hover{
                         color: orange;
                         transition: 0.2s linear;
@@ -231,7 +185,7 @@ body{
                 @extend %text;
                 font-size: 25px;
                 .signature{
-                    margin-top: 20px;
+                    margin-top: $size02;
                 }
             }
         }

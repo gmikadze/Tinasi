@@ -1,3 +1,4 @@
+@import 'variables.scss';
 %page{
     max-width: 1920px;
     margin: 0px auto;
@@ -13,7 +14,7 @@
 %list-item{
     color:white;
     margin: 40px 10px 0 0;
-    font-size: 15px;
+    font-size: $size02;
     font-weight: bolder;
     padding: 8px;
     border-radius: 10px;
@@ -21,7 +22,7 @@
 }
 %navbar{
     max-width: 1920px;
-    padding: 10px;
+    padding: $size01;
     width: 100%;
 }
 %content{
@@ -42,8 +43,8 @@
     margin: 30vh 0 0 50%;
     transform: translate(-50%);
     color: whitesmoke;
-    font-size: 50px;
-    letter-spacing: 20px;
+    font-size: $size05;
+    letter-spacing: $size02;
     font-weight: bolder;
     background-color: #111;
     display: inline-block;
@@ -63,20 +64,17 @@
 %title{
     text-align: center;
     color: whitesmoke;
-    font-size: 50px;
-    letter-spacing: 10px;
-    padding: 20px 0;
+    font-size: $size05;
+    letter-spacing: $size01;
+    padding: $size02 0;
 }
-// %title-after{
-//     content: '';
-//     display: block;
-//     height: 2px;
-//     background-color: white;
-//     width: 100%;
-//     margin: 20px auto;
-// }
+%image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 %text{
-    margin: 20px auto;
+    margin: $size02 auto;
     letter-spacing: 2px;
     line-height: 40px;
     max-width: 1000px;
@@ -102,7 +100,7 @@
     transform: translate(0%, -100%);
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: $size02;
     background-color: rgba($color: #000000, $alpha: 0);
 }
 %galtext{
@@ -111,6 +109,7 @@
     max-width: 250px;
     text-align: center;
     line-height: 25px;
+    
 }
 %footer-grid{
     display: grid;
