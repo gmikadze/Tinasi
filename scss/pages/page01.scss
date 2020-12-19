@@ -62,14 +62,22 @@ body{
                     .text{
                         @extend %text;
                     }
-                }    
+                }
+                @media (max-width:1100px) {
+                    .description{
+                        .text{
+                            font-size: $size02;
+                            line-height: 35px;
+                        }    
+                    }
+                }
             }
         }
         .products{
             background-color: whitesmoke;
             .pro-title{
+                background-color: #000000;
                 @extend %title;
-                color: blueviolet;
                 &::after, 
                 &::before{
                     @include after(10%);
@@ -77,7 +85,7 @@ body{
                 }
             }
             .pro{
-                padding-bottom: $size05;
+                padding: $size05 0;
                 @include flex (space-around, wrap);
                 .pro-item{
                     background-color: white;
@@ -88,13 +96,20 @@ body{
                         object-fit: contain;
                     }
                     .text{
-                        @extend %galtext;
+                        @extend %protext;
                         h4{
                             font-size: $size02;
                             &::after{
                                 @include after(80%);
                                 background-color: blueviolet;
                             }
+                        }
+                    }
+                    @media (max-width:1300px) {
+                        width: 100%;
+                        @include flex(center, wrap);
+                        .text{
+                            max-width: 700px;
                         }
                     }
                 }

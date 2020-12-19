@@ -1,0 +1,73 @@
+@import '../basic/variables.scss';
+@import '../basic/classes.scss';
+@import '../basic/mixins.scss';
+@import '../scss/fonts/stylesheet.css';
+body{
+    background-image: url(../pics/back5.jpg);
+    @extend %background;
+    .page{
+        @extend %page;
+        header{
+            .navbar{
+                @extend %navbar;
+                @include flex(space-around, wrap);
+                .logo{
+                    height: $hlogo;
+                    img{
+                        height: 100%;
+                    }
+                }
+                .menu{
+                    .nav{
+                        @include flex(space-between, wrap);
+                        .list-item{
+                            @extend %list-item;
+                            &:hover{
+                                @extend %nav-hover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .homepage{
+            height: $max-page;
+            .main-title{
+                @extend %maintitle;
+            }         
+        }
+        .store{
+            background-image: linear-gradient(rgba($color: #111, $alpha: 0.5), #111);
+            .form{
+                border: 1px red solid;
+                text-align: center;
+            }
+            .gal-title{
+                @extend %title;
+            }
+            .box-container{
+                padding: $size02;
+                @include flex(center, wrap);
+                .pro-box{
+                    width: 400px;
+                    margin: $size01;
+                    border-radius: 20px;
+                    background-color: #111;
+                    .probox-text{
+                        @extend %smalltext;
+                        color: whitesmoke;
+                        padding: $size01;
+                    }
+                    &:hover{
+                        transform: translateY(-$size02);
+                        transition: linear 0.3s;
+                    }
+                    img{
+                        width: 100%;
+                        border-radius: $size02;
+                    }
+                }
+            }
+        }
+    }
+}

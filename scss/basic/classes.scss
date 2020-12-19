@@ -3,13 +3,13 @@
     max-width: 1920px;
     margin: 0px auto;
     overflow: hidden;
+    font-family: 'Langar';
 }
 %background{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    // border: 3px whitesmoke solid;
 }
 %list-item{
     color:white;
@@ -18,20 +18,11 @@
     font-weight: bolder;
     padding: 8px;
     border-radius: 10px;
-    // border: whitesmoke 1px solid;
 }
 %navbar{
     max-width: 1920px;
     padding: $size01;
     width: 100%;
-}
-%content{
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
 }
 %nav-hover{
     color: whitesmoke;
@@ -83,6 +74,10 @@
     font-weight: lighter;
     color: whitesmoke;
 }
+%smalltext{
+    font-size: $size02;
+    line-height: 35px;
+}
 %card{
     position: absolute;
     top: 50%;
@@ -103,7 +98,7 @@
     border-radius: $size02;
     background-color: rgba($color: #000000, $alpha: 0);
 }
-%galtext{
+%protext{
     color: blueviolet;
     padding: 10px 0;
     max-width: 250px;
