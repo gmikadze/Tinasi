@@ -333,7 +333,7 @@ body {
               margin: 20px auto;
               background-color: blueviolet; }
     body .page .gallery {
-      background-image: url(../pics/IMG_9818.jpg); }
+      background-image: url(../pics/IMG9818.jpg); }
       body .page .gallery h3::after, body .page .gallery h3::before {
         content: '';
         display: block;
