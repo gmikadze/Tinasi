@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "gulp-uglifycss": "^1.1.0",
+    "jquery": "^3.5.1",
     "uninstall": "0.0.0"
   },
   "description": ""
