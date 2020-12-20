@@ -30,11 +30,30 @@ body{
                 }
             }
         }
-        .homepage{
-            height: $max-page;
+        .homepage-about{
             .main-title{
                 @extend %maintitle;
-            }         
+            }
+            .front-page{
+                @include flex(center, wrap);
+                .slide-container{
+                    max-width: 800px;
+                    padding: $size01;
+                    .slide{
+                        display: none;
+                        img{
+                            vertical-align: middle;
+                            @include for-image(contain);
+                        }
+                    }
+                }
+                .about-text{
+                    color: blue;
+                    border: 1px red solid;
+                    max-width: 700px;
+                    
+                }
+            }
         }
     }
 }

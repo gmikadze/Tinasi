@@ -73,7 +73,7 @@ body .page header .navbar .menu .nav .list-item:hover {
   -webkit-transition: linear 0.4s;
   transition: linear 0.4s; }
 
-body .page .homepage .main-title {
+body .page .homepage .main-title, body .page .homepage-about .main-title {
   text-align: center;
   margin: 30vh 0 0 50%;
   -webkit-transform: translate(-50%);
@@ -181,7 +181,7 @@ body .page header .navbar .menu .nav .list-item:hover {
   -webkit-transition: linear 0.4s;
   transition: linear 0.4s; }
 
-body .page .homepage .main-title {
+body .page .homepage .main-title, body .page .homepage-about .main-title {
   text-align: center;
   margin: 30vh 0 0 50%;
   -webkit-transform: translate(-50%);
@@ -340,7 +340,7 @@ body .page header .navbar .menu .nav .list-item:hover {
   -webkit-transition: linear 0.4s;
   transition: linear 0.4s; }
 
-body .page .homepage .main-title {
+body .page .homepage .main-title, body .page .homepage-about .main-title {
   text-align: center;
   margin: 30vh 0 0 50%;
   -webkit-transform: translate(-50%);
@@ -432,8 +432,31 @@ body {
           -ms-flex-pack: justify;
               justify-content: space-between;
       vertical-align: middle; }
-  body .page .homepage {
-    height: 100vh; }
+  body .page .homepage-about .front-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    vertical-align: middle; }
+    body .page .homepage-about .front-page .slide-container {
+      max-width: 800px;
+      padding: 10px; }
+      body .page .homepage-about .front-page .slide-container .slide {
+        display: none; }
+        body .page .homepage-about .front-page .slide-container .slide img {
+          vertical-align: middle;
+          height: 100%;
+          width: 100%;
+          -o-object-fit: contain;
+             object-fit: contain; }
+    body .page .homepage-about .front-page .about-text {
+      color: blue;
+      border: 1px red solid;
+      max-width: 700px; }
 
 body .page {
   max-width: 1920px;
@@ -466,7 +489,7 @@ body .page header .navbar .menu .nav .list-item:hover {
   -webkit-transition: linear 0.4s;
   transition: linear 0.4s; }
 
-body .page .homepage .main-title {
+body .page .homepage .main-title, body .page .homepage-about .main-title {
   text-align: center;
   margin: 30vh 0 0 50%;
   -webkit-transform: translate(-50%);
