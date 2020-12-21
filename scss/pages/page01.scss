@@ -27,6 +27,12 @@ body{
                                 @extend %nav-hover;
                             }
                         }
+                        @media (max-width: 400px) {
+                            .list-item{
+                                width: 100%;
+                                text-align: center;
+                            }
+                        }
                     }
                 }
             }    
@@ -36,14 +42,6 @@ body{
             .main-title{
                 @extend %maintitle;
             }         
-            .animated{
-                margin: 30vh 50%;
-                height: $hlogo;
-                img{
-                    animation: anime 2.5s linear infinite alternate;
-                    height: 100%;
-                }
-            }
         }
         .about{
             background-image: url(../pics/back4.png);
@@ -81,7 +79,6 @@ body{
                 &::after, 
                 &::before{
                     @include after(10%);
-                    background-color: blueviolet;
                 }
             }
             .pro{
@@ -92,9 +89,7 @@ body{
                     margin-bottom: 10px;
                     @include flex (center, wrap);
                     img{
-                        max-width: 400px;
-                        height: 500px;
-                        object-fit: contain;
+                        @extend %home-pro-image;
                     }
                     .text{
                         @extend %protext;
@@ -102,7 +97,7 @@ body{
                             font-size: $size02;
                             &::after{
                                 @include after(80%);
-                                background-color: blueviolet;
+                                background-color: black;
                             }
                         }
                     }
@@ -128,8 +123,7 @@ body{
             }
             .carousel{
                 .carousel-item{
-                    width: 600px;
-                    height: 500px;
+                    @extend %carousel-size;
                     img{
                         @extend %image;
                     }

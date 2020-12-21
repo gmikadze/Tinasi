@@ -66,6 +66,11 @@
     height: 100%;
     object-fit: contain;
 }
+%home-pro-image{
+    max-width: 400px;
+    height: 500px;
+    object-fit: contain;
+}
 %text{
     margin: $size02 auto;
     letter-spacing: 2px;
@@ -81,12 +86,22 @@
     line-height: 35px;
 }
 %protext{
-    color: blueviolet;
     padding: 10px 0;
     max-width: 250px;
     text-align: center;
-    line-height: 25px;
-    
+    line-height: $line-h;
+}
+%about-text{
+    color: whitesmoke;
+    max-width: 700px;
+    line-height: $size05;
+    font-size: larger;
+    padding: $size02;
+    text-align: center;
+}
+%carousel-size{
+    width: 600px;
+    height: 500px;
 }
 %footer-box{
     width: 415px;

@@ -38,7 +38,7 @@ body{
                 @include flex(center, wrap);
                 .slide-container{
                     max-width: 800px;
-                    padding: $size01;
+                    padding: $size02;
                     .slide{
                         display: none;
                         img{
@@ -48,10 +48,7 @@ body{
                     }
                 }
                 .about-text{
-                    color: blue;
-                    border: 1px red solid;
-                    max-width: 700px;
-                    
+                    @extend %about-text;
                 }
             }
         }
