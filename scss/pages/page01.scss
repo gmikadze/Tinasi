@@ -27,7 +27,7 @@ body{
                                 @extend %nav-hover;
                             }
                         }
-                        @media (max-width: 400px) {
+                        @media (max-width: 500px) {
                             .list-item{
                                 width: 100%;
                                 text-align: center;
@@ -183,7 +183,7 @@ body{
                 color: whitesmoke;
                 @include flex(center, nowrap);
                 i{
-                    font-size: 25px;
+                    font-size: $line-h1;
                     margin-right: $size02;
                     &:hover{
                         color: orange;
@@ -193,7 +193,7 @@ body{
             }
             .last-point{
                 @extend %text;
-                font-size: 25px;
+                font-size: $line-h1;
                 .signature{
                     margin-top: $size02;
                 }
